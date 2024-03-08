@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+    <div id="game-board" class="game-board"></div>
+
+    <div class="description">
+        <h2>You Lose! Press Ok to restart </h2>
+        <div class="buttons">
+        <button class=" btn btn-primary OK">OK</button>
+        <button class="btn bg-secondary text-light CANCEL">CANCEL</button>
+        </div>
+    </div>
+
+
+    <div class="mob mob1">
+        <button class=" btn  btn-primary LEFT" id="left-button"><i class="fa fa-arrow-left"></i></button>
+        <button class="btn  btn-primary UP" id="up-button"><i class="fa fa-arrow-up"></i></button>
+        <button class="btn  btn-primary RIGHT" id="right-button"> <i class="fa fa-arrow-right"></i></button>
+    </div>
+
+    <div class="mob">
+    <button class="mob btn  btn-primary DOWN" id="down-button"><i class="fa fa-arrow-down"></i></button>
+    </div>
+
+    <!-- <button class="btn btn-primary STOP ">Stop</button> -->
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/game.js" type="module"></script>
+    <!-- <script src="js/input.js"></script> -->
+
+
+</body>
+</html>
