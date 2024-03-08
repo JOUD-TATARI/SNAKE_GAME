@@ -59,7 +59,8 @@ function checkDeath()
 
 document.querySelector(".OK").onclick=function ()
 {
-    window.location="/";
+    // window.location="/";
+     window.onload();
     document.querySelector(".description").style.visibility="hidden"
     document.querySelector(".description").style.opacity="0"
 }
