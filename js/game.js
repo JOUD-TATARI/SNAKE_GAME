@@ -60,7 +60,7 @@ function checkDeath()
 document.querySelector(".OK").onclick=function ()
 {
     // window.location="/";
-     window.location.reload(true);
+     window.location.reload();
     document.querySelector(".description").style.visibility="hidden"
     document.querySelector(".description").style.opacity="0"
 }
