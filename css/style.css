@@ -1,0 +1,104 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    background-color:palevioletred;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-board
+{
+    background-color: grey;
+    height: 100vmin;
+    width: 100vmin;
+    display: grid;
+    grid-template-columns: repeat(21,1fr);
+    grid-template-rows: repeat(21,1fr);
+}
+.snake
+{
+    background: wheat;
+    border: 0.25vmin solid grey;
+}
+
+.food
+{
+    background-color: rgb(225, 8, 80);
+    border: 0.25vmin solid grey;
+}
+.description 
+{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+}
+.description h2
+{
+    text-align: center;
+
+}
+.buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.UP
+{
+    margin-bottom: 70px;
+}
+.DOWN 
+{
+    margin-top: -70px;
+}
+.mob
+{
+    display: none;
+
+}
+
+@media screen and (min-width:300px) and (max-width:500px) {
+    #game-board
+    {
+        /* width: 70vmin; */
+        height: 200vmin;
+    }
+    .snake {
+        background: wheat;
+        border: 0.25vmin solid grey;
+        /* width: 30px; */
+
+    }
+    .food {
+        background-color: rgb(225, 8, 80);
+        border: 0.25vmin solid grey;
+        /* width: 30px; */
+    }
+    .mob {
+        display: block;
+        
+    }
+    .mob1
+    {
+        margin-top: 40px;
+    }
+}
+ 
